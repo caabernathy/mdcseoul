@@ -1,0 +1,14 @@
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+ios/MobileDevCon.xcodeproj/build/
+ios/MobileDevCon.xcodeproj/*.pbxuser
+ios/MobileDevCon.xcodeproj/*.mode*
+ios/MobileDevCon.xcodeproj/xcuserdata*
+ios/MobileDevCon.xcodeproj/project.xcworkspace/
+android/MobileDevCon/bin/
+android/MobileDevCon/gen/
+android/MobileDevCon/assets/
+android/MobileDevCon/settings
+*~
+*#
