@@ -51,6 +51,10 @@
 
 
 #pragma mark - Share methods
+/*
+ * Method that tells a common story using the Share
+ * Dialog and a user-owned object created by the dialog.
+ */
 - (IBAction)shareUserOwnedBookAction:(id)sender {
     // Create an action
     id<FBOpenGraphAction> action = (id<FBOpenGraphAction>)[FBGraphObject graphObject];
@@ -86,6 +90,10 @@
      }];
 }
 
+/*
+ * Method that tells a common story using the Share
+ * Dialog and an app-owned object specified via an id.
+ */
 - (IBAction)shareAppOwnedBookAction:(id)sender {
     // Create an action
     id<FBOpenGraphAction> action = (id<FBOpenGraphAction>)[FBGraphObject graphObject];
@@ -107,6 +115,10 @@
      }];
 }
 
+/*
+ * Method that tells a common story using the
+ * Share Dialog and the object specified via URL.
+ */
 - (IBAction)shareSelfHostedBookAction:(id)sender {
     // Create an action
     id<FBOpenGraphAction> action = (id<FBOpenGraphAction>)[FBGraphObject graphObject];
@@ -128,19 +140,23 @@
      }];
 }
 
+/*
+ * Method that tells a custom story using the
+ * Share Dialog.
+ */
 - (IBAction)shareCreateCollageAction:(id)sender {
     // Create an action
     id<FBOpenGraphAction> action = (id<FBOpenGraphAction>)[FBGraphObject graphObject];
     
     // Attach a book object to the action
     action[@"collage"] = @{
-                        @"type": @"mobdevcon:collage",
-                        @"fbsdk:create_object": @YES,
-                        @"title": @"My Collage",
-                        @"url": @"https://furious-mist-4378.herokuapp.com/collage/collage123/",
-                        @"image": @"https://furious-mist-4378.herokuapp.com/collage/my_collage.jpg",
-                        @"description": @"My first collage."
-                        };
+                           @"type": @"mobdevcon:collage",
+                           @"fbsdk:create_object": @YES,
+                           @"title": @"My Collage",
+                           @"url": @"https://furious-mist-4378.herokuapp.com/collage/collage123/",
+                           @"image": @"https://furious-mist-4378.herokuapp.com/collage/my_collage.jpg",
+                           @"description": @"My first collage."
+                           };
     
     // Show the share dialog to publish the book read action
     [FBDialogs presentShareDialogWithOpenGraphAction:action
@@ -156,6 +172,10 @@
      }];
 }
 
+/*
+ * Method that shows the customized UI to tell a story
+ * using the Object API and the Graph API
+ */
 - (IBAction)shareAPIBookAction:(id)sender {
     // First check that the user has an active session
     if (!FBSession.activeSession.isOpen) {
