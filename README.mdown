@@ -7,14 +7,15 @@
 ## iOS
 
  1. Open up the ViewController.m file in the code and substitute ''mobdevcon'' with your app namespace.
- 1. Go to your app's .plist and change these values:
+ 1. Go to the app's .plist and change these values:
    
   + fbAPP_ID to ''fb'' followed by your Facebook app id.
   + FacebookAppID value to your app id's value.
   + FacebookDisplayName value to your app's Display Name in the Facebook App Dashboard.
 
+ 1. Make sure the Bundle ID value in the App Dashboard iOS settings matches the one in the iOS app. It's com.facebook.samples.mobdevcon by default but you'll want to modify this to build it on a real device.
+
 ---
 ## Android
 
   1. In the `res/values/strings.xml` file change the value of `app_id` to your app ID.
-  1. 
