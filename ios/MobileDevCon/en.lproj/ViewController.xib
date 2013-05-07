@@ -42,7 +42,6 @@
 						<string key="NSFrame">{{67, 20}, {186, 50}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -59,7 +58,6 @@
 						<string key="NSFrame">{{74, 101}, {226, 44}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -494,40 +492,31 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">ViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="createChallengeButton">UIButton</string>
-						<string key="loginView">FBLoginView</string>
-						<string key="pageControl">UIPageControl</string>
-						<string key="privacyImageView">UIImageView</string>
-						<string key="scrollView">UIScrollView</string>
-						<string key="shareBookButton">UIButton</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="shareAppOwnedBookAction:">id</string>
+						<string key="shareUserOwnedBookAction:">id</string>
 					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="createChallengeButton">
-							<string key="name">createChallengeButton</string>
-							<string key="candidateClassName">UIButton</string>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="shareAppOwnedBookAction:">
+							<string key="name">shareAppOwnedBookAction:</string>
+							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="loginView">
+						<object class="IBActionInfo" key="shareUserOwnedBookAction:">
+							<string key="name">shareUserOwnedBookAction:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">loginView</string>
+						<string key="NS.object.0">FBLoginView</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">loginView</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
 							<string key="name">loginView</string>
 							<string key="candidateClassName">FBLoginView</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="pageControl">
-							<string key="name">pageControl</string>
-							<string key="candidateClassName">UIPageControl</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="privacyImageView">
-							<string key="name">privacyImageView</string>
-							<string key="candidateClassName">UIImageView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="scrollView">
-							<string key="name">scrollView</string>
-							<string key="candidateClassName">UIScrollView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="shareBookButton">
-							<string key="name">shareBookButton</string>
-							<string key="candidateClassName">UIButton</string>
-						</object>
-					</dictionary>
+					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/ViewController.h</string>
